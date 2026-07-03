@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+*.egg
+.pytest_cache/
+
+# Training artifacts
+training/checkpoints/
+training/logs/
+training/merged/
+training/*.bin
+training/*.safetensors
+
+# Data (processed outputs only; raw and synthetic are tracked for reproducibility)
+data/processed/
+
+# Evaluation
+evaluation/reports/
+evaluation/benchmarks/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+venv/
+.venv/
+*.env.local
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log

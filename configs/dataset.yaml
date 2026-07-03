@@ -1,0 +1,23 @@
+# Dataset configuration
+input_path: data/raw/chat_data.json
+output_dir: data/processed
+
+validation:
+  min_turns: 2
+
+cleaning:
+  normalize_unicode: true
+  strip_whitespace: true
+
+deduplication:
+  enabled: true
+
+formatting:
+  format: chatml
+  include_system: true
+  max_content_length: 4096
+
+split:
+  val_ratio: 0.1
+  seed: 42
+  stratify_by_language: false

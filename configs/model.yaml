@@ -1,0 +1,21 @@
+# Model configuration
+model:
+  name: Qwen2.5-3B-Instruct
+  hf_id: Qwen/Qwen2.5-3B-Instruct
+  family: qwen2.5
+  params: 3B
+  context_length: 32768
+  architecture: transformers
+
+tokenizer:
+  chat_template: chatml
+  padding_side: right
+  truncation_side: right
+  pad_token: <|endoftext|>
+  eos_token: <|im_end|>
+
+recommended_gpu:
+  training: T4 (16GB)  # QLoRA 4-bit
+  inference: T4 (16GB) # or CPU (slow)
+  min_vram_training: 8
+  min_vram_inference: 6
